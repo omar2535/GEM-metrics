@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from .metric import ReproReferencedMetric
 
-from repro.models.sellam2020 import BLEURT as _BLEURT
+from repro2.models.sellam2020 import BLEURT as _BLEURT
 from typing import List
 
 

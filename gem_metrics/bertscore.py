@@ -4,7 +4,7 @@ from .texts import Predictions, References
 from .metric import ReferencedMetric
 
 from typing import Dict, List
-from datasets import load_metric
+from evaluate import load
 
 
 class BERTScore(ReferencedMetric):
@@ -16,7 +16,7 @@ class BERTScore(ReferencedMetric):
         pass
 
     def _initialize(self):
-        self.metric = load_metric("bertscore", batch_size=64)
+        self.metric = load("bertscore", batch_size=64)
 
     def _make_serializable(self, score_entry) -> List[float]:
         """Convert from tensor object to list of floats."""

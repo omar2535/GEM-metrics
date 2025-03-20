@@ -1,6 +1,6 @@
 from .metric import ReproReferencedMetric
 
-from repro.models.kane2020 import NUBIA as _NUBIA
+from repro2.models.kane2020 import NUBIA as _NUBIA
 from typing import List
 
 
