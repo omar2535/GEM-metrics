@@ -10,7 +10,7 @@ dependencies = [
     "evaluate>=0.4.3",
     "logzero>=1.7.0",
     "nltk>=3.9.1",
-    "numpy>=2.2.4",
+    "numpy",
     "pycountry>=24.6.1",
     "repro2>=0.0.5",
     "rouge-score>=0.1.2",
